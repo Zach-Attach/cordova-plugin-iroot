@@ -85,9 +85,6 @@ enum {
 
 
 - (bool) jailbroken {
-
-// if !(TARGET_IPHONE_SIMULATOR)
-
     if ([[NSFileManager defaultManager] fileExistsAtPath:@"/Applications/Cydia.app"])
     {
         return YES;
@@ -286,11 +283,6 @@ enum {
         // Jailbroken
         return YES;
     }
-
-
-// endif
-
-    return NO;
 }
 
 
